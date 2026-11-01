@@ -1,0 +1,385 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F4F5F8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
+  color: #334155;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 980px;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  display: flex;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.07), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+}
+
+/* Left Panel */
+.login-left {
+  flex: 1.1;
+  background: linear-gradient(145deg, #D84B00 0%, #C43E00 100%);
+  padding: 44px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.left-header {
+  margin-bottom: 20px;
+}
+
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.brand-logo svg {
+  width: 26px;
+  height: 26px;
+}
+
+.left-title {
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+
+.left-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  opacity: 0.92;
+  font-weight: 400;
+  max-width: 380px;
+  color: #FFFFFF;
+}
+
+/* Feature List */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  fill: none;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+.feature-sub {
+  font-size: 11.5px;
+  opacity: 0.85;
+  line-height: 1.3;
+  color: #FFFFFF;
+}
+
+.left-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 18px;
+  margin-top: 12px;
+  font-size: 12px;
+  opacity: 0.85;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+/* Right Panel */
+.login-right {
+  flex: 1;
+  padding: 48px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+.right-header {
+  margin-bottom: 28px;
+}
+
+.right-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.right-desc {
+  font-size: 13.5px;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+.alert-error {
+  background: #FEF2F2;
+  border: 1px solid #FECACA;
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #DC2626;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.form-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #334155;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.forgot-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9A3400;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #0F172A;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.form-control::placeholder {
+  color: #94A3B8;
+}
+
+.form-control:focus {
+  outline: none;
+  background-color: #FFFFFF;
+  border-color: #D84B00;
+  box-shadow: 0 0 0 3px rgba(216, 75, 0, 0.12);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94A3B8;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
+  color: #475569;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #9A3400;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  font-size: 13px;
+  color: #475569;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 13px;
+  background: #9A3400;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s, transform 0.1s;
+  box-shadow: 0 4px 12px rgba(154, 52, 0, 0.2);
+}
+
+.btn-submit:hover {
+  background: #832C00;
+}
+
+.btn-submit:active {
+  transform: scale(0.99);
+}
+
+.right-footer {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 11.5px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+/* Page Outer Footer */
+.page-footer {
+  width: 100%;
+  max-width: 980px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 4px;
+}
+
+.footer-brand {
+  font-size: 16px;
+  font-weight: 800;
+  color: #8B2C00;
+  margin-bottom: 4px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #64748B;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748B;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #0F172A;
+}
+
+/* Responsive */
+@media (max-width: 868px) {
+  .login-card {
+    flex-direction: column;
+  }
+  .login-left, .login-right {
+    padding: 32px 24px;
+  }
+  .page-footer {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+  }
+}
